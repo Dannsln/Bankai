@@ -13,7 +13,7 @@ public class Integrantes {
      public static void main(String[] args) {
         System.out.println("Equipo \"Soul Reapers\"");
         System.out.println("Integrantes");
-        System.out.println("Pérez Quiliche Dany\nVásquez Quiroz Johan\nCarrasco Burga Jesús\nCarrasco Burga Jesús");
+        System.out.println("Pérez Quiliche Dany\nVásquez Quiroz Johan\nVásque Yupanqui Deyvit\nCarrasco Burga Jesús");
      }
 
 }
