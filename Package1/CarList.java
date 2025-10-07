@@ -191,9 +191,6 @@ public class CarList {
 
 
     public void Menu(){
-
-       
-
         Scanner sc = new Scanner(System.in);
         char answer;
         System.out.println("Ingresa el Nodo Inicial(Nodo raíz)\n");
@@ -206,7 +203,7 @@ public class CarList {
            
             System.out.println("---------------Despliegue de Menú--------------");
             System.out.println("Selecciona una opción");
-            System.out.println("1.Insertar por Inicio\n2.Insertar por Final\n3.Insertar en Lista\n4.Buscar un Nodo específico\n5.Salir");
+            System.out.println("1.Insertar por Inicio\n2.Insertar por Final\n3.Insertar en Lista\n4.Buscar un Nodo específico\n5.Ver Lista\n6.Salir");
 
 
             answer = sc.next().charAt(0);
@@ -227,15 +224,19 @@ public class CarList {
             searchNode(Target);
             break;
             case '5':
-           
+            System.out.println("Lista actua: ");
+            viewLinkedList();
             break;
-    
+            case '6': 
+            System.out.println("Terminando ejecución del programa");
+            break;
             default:
             System.out.println("Ingresa valor válido");
                 break;
         }
     
-        } while (answer!='5');
+        } while (answer!='6');
+        sc.close();
     
     }
     
